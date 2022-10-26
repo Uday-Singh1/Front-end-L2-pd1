@@ -1,0 +1,47 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+.header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header__figure{
+    height: 100%;
+    width: 100%;
+    background: colors.$linear-gradient-default, url("../img/pexels-tanathip-rattanatum-2026451.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.header > .header__figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: colors.$font-color;
+    text-align: center;
+}
+
+.header__h1{
+    font-family: fonts.$handwriting;
+    font-size: 500%;
+}
+
+.header__h2{
+    @extend %h2Handwritting;
+}
+
+.header__logo{
+    @extend %icon;
+}
+
+.header__button{
+    @extend %cta;
+}

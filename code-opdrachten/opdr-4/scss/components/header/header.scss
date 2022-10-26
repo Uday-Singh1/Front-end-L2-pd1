@@ -1,0 +1,64 @@
+@use '../../components/abstract/mixins';
+@use '../../components/abstract/colors';
+@use '../../components/abstract/animations.scss';
+.header{
+    width: 80vw;
+    max-width: 150rem;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:var(--background-color);
+    color: var(--font-color);
+    padding: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    @include animations.popup;
+
+    &__logo{
+    font-size: 200%;
+    border-radius: 50%;
+    color: #FBF8F1;
+    background: colors.$gradient;
+    border: 0.2rem dashed transparent;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    width: 8rem;
+    height: 8rem;
+    @include mixins.flexCenter; 
+
+    &:hover{
+        color: #54BAB9;
+        border: 0.2rem dashed #54BAB9;
+        box-sizing: border-box;
+        background: transparent;
+        @include mixins.rotate;
+        }
+        
+    }
+    &__rightwrapper{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    &__avatar{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+
+        &:hover{
+            @include mixins.rotate(0.8s);
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+

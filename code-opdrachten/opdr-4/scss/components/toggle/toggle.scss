@@ -1,0 +1,44 @@
+@use '../../components/abstract/colors';
+
+:root{
+    --background-color: #FBF8F1;
+    --font-color: rgb(0, 0, 0);
+}
+
+.toggle__input {
+    appearance: none;
+    width: 9rem;
+    height: 4rem;
+    border-radius: 5rem;
+    position: relative;
+    background: colors.$background--dark;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        background: colors.$gradient;
+        border-radius: 50%;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+    &:focus:after{
+        outline: 0.2rem solid rgb(36, 172, 193); 
+    }
+
+    &:checked {
+        background: colors.$background;
+    }
+
+    &:checked::after {
+        left: 80%;
+    }
+}

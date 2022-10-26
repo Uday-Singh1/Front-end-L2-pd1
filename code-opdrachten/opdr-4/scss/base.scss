@@ -1,0 +1,16 @@
+@use './components/abstract/mixins';
+@use './components/abstract/colors';
+
+*:focus{
+    outline: 0.2rem solid rgb(255, 255, 255) !important;
+}
+
+body{
+    background: colors.$gradient;
+    min-height: 100vh;
+    @include mixins.flexCenter;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: 'Noto Sans', sans-serif;
+}

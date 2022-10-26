@@ -1,0 +1,20 @@
+.heart{
+    background: none;
+    outline: none;
+    border: none;
+    font-size:120%;
+    padding: 0.5rem;
+
+    &__logo{
+        font-size: 120%;
+        color: #54BAB9;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    &__logo.fa-solid{
+        color: #54BAB9;
+    }
+}
+

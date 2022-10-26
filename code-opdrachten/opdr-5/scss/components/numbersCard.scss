@@ -1,0 +1,16 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.numbersCard{
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+    background: variables.$numbersCardBackground;
+    box-shadow: variables.$boxShadow;
+    @include mixins.flex;
+    &__h2{
+        font-size: 200%;
+        font-weight: 400;
+        font-family: sans-serif;
+    }
+}

@@ -1,0 +1,70 @@
+@use 'colors';
+@use 'components';
+
+
+
+@media screen  and (max-width: 75rem) {
+    body{
+        font-size: 1.6rem;
+    }
+    .header{
+        height: 120rem;
+    }
+   
+    .over__header{
+        height: 10%;
+    }
+
+
+    .over__columns {
+        flex-direction: column;
+        width: 90%;
+    }
+    .over__column {
+        height: 60%;
+    }
+    .over__p {
+        width: 100%;
+        color: colors.$font-color;
+    }
+    .over__figure{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+    .kenmerken {
+        min-height: 120rem;
+    }
+    .kenmerken__listItem {
+        width: 100%;
+    }
+
+    .gallerij{
+        min-height: auto;
+
+    }
+    .gallerij__fotos{
+        flex-wrap: wrap;
+    }
+    .gallerij__foto{
+        height: 20rem;
+        width: 100%;
+    }
+    .gallerij__foto:hover .gallerij__button{
+        opacity: 1;
+    }
+    
+    .gallerij__foto:hover  .gallerij_gradient{
+        transform: scale(0);
+    }
+}
+
+
+@media screen and (max-width: 50rem) {
+    .nav__list{
+        flex-direction: column;
+    }
+    .over__columns{
+        padding: 2rem;
+    }
+}

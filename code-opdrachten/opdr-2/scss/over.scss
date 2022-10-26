@@ -1,0 +1,57 @@
+@use 'colors';
+@use 'components';
+
+
+.over{
+    @extend %section;
+}
+
+.over__header{
+    @extend %header;
+}
+
+.over__h2{
+    @extend %h2Handwritting;
+}
+
+.over__columns{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.over__column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.over__p{
+    width: 55ch;
+    color: colors.$font-color;
+}
+
+.over__figure{
+    position: relative;
+    width: 50rem;
+    height: 60rem;
+}
+
+.over__figure::after{
+    content: "";
+    background: colors.$linear-gradient-default;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.over__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

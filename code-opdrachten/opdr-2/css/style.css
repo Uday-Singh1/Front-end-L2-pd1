@@ -1,0 +1,328 @@
+.nav__button, .header__button, .gallerij__button {
+  width: 11rem;
+  padding: 1rem;
+  font-size: 80%;
+  background: #E94560;
+  border: none;
+  color: #eee;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.nav__button:hover, .header__button:hover, .gallerij__button:hover {
+  cursor: pointer;
+  background: #e01b3b;
+  transition: 0.2s;
+}
+
+.over__header, .kenmerken__header, .gallerij__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.over__h2, .kenmerken__h2, .header__h2, .gallerij__h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 300%;
+  color: #eee;
+}
+
+.over, .kenmerken, .gallerij {
+  height: 80rem;
+  border-bottom: 0.2rem solid #E94560;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.nav__logo, .kenmerken__logo, .header__logo {
+  font-size: 250% !important;
+  color: #eee;
+  border: 0.3rem solid #E94560;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  background: rgba(136, 115, 175, 0.8);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-bottom: 0.2rem solid #E94560;
+}
+
+.footer__ul {
+  display: flex;
+  gap: 16rem;
+  padding: 2rem;
+}
+
+.footer__list {
+  color: #eee;
+  font-size: 500%;
+  display: flex;
+  padding: 2rem;
+}
+
+.footer__list:hover {
+  color: rgb(0, 0, 0);
+}
+
+.gallerij__header {
+  padding-bottom: 2rem;
+}
+
+.gallerij__fotos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallerij__foto {
+  width: 25%;
+  height: 30rem;
+  list-style: none;
+  position: relative;
+}
+
+.gallerij_gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, rgba(22, 33, 62, 0.8), 80%, rgba(233, 69, 96, 0.5));
+  transform: scaleX(0);
+  transition: 0.8s;
+  transform-origin: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallerij__button {
+  opacity: 0;
+  transition-delay: 0.8s;
+  transition-duration: 0.2s;
+}
+
+.gallerij__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallerij__foto:hover .gallerij__button {
+  opacity: 1;
+}
+
+.gallerij__foto:hover .gallerij_gradient {
+  transform: scale(1);
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__figure {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(22, 33, 62, 0.8), 80%, rgba(233, 69, 96, 0.5)), url("../img/pexels-tanathip-rattanatum-2026451.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.header > .header__figure > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  color: #eee;
+  text-align: center;
+}
+
+.header__h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 500%;
+}
+
+.kenmerken__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.kenmerken__listItem {
+  list-style: none;
+  color: #eee;
+  flex-shrink: 0;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kenmerken__p {
+  width: 30ch;
+  text-align: center;
+}
+
+.kenmerken__logo {
+  font-size: 180%;
+}
+
+@media screen and (max-width: 75rem) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header {
+    height: 120rem;
+  }
+  .over__header {
+    height: 10%;
+  }
+  .over__columns {
+    flex-direction: column;
+    width: 90%;
+  }
+  .over__column {
+    height: 60%;
+  }
+  .over__p {
+    width: 100%;
+    color: #eee;
+  }
+  .over__figure {
+    position: relative;
+    width: 100%;
+    height: 40%;
+  }
+  .kenmerken {
+    min-height: 120rem;
+  }
+  .kenmerken__listItem {
+    width: 100%;
+  }
+  .gallerij {
+    min-height: auto;
+  }
+  .gallerij__fotos {
+    flex-wrap: wrap;
+  }
+  .gallerij__foto {
+    height: 20rem;
+    width: 100%;
+  }
+  .gallerij__foto:hover .gallerij__button {
+    opacity: 1;
+  }
+  .gallerij__foto:hover .gallerij_gradient {
+    transform: scale(0);
+  }
+}
+@media screen and (max-width: 50rem) {
+  .nav__list {
+    flex-direction: column;
+  }
+  .over__columns {
+    padding: 2rem;
+  }
+}
+nav {
+  width: 100%;
+  background: rgba(15, 52, 96, 0.7);
+  display: flex;
+  justify-content: space-between;
+  min-height: 7rem;
+  align-items: center;
+  color: #eee;
+  padding: 1rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  font-size: 120%;
+  color: #eee;
+}
+
+.over__columns {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.over__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.over__p {
+  width: 55ch;
+  color: #eee;
+}
+
+.over__figure {
+  position: relative;
+  width: 50rem;
+  height: 60rem;
+}
+
+.over__figure::after {
+  content: "";
+  background: linear-gradient(to bottom right, rgba(22, 33, 62, 0.8), 80%, rgba(233, 69, 96, 0.5));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.over__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a, a:visited, a:link {
+  color: #eee;
+  text-decoration: none;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Lato", serif;
+  background: #16213E;
+}
+
+/*# sourceMappingURL=style.css.map */

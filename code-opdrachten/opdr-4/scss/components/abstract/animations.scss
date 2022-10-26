@@ -1,0 +1,16 @@
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@mixin popup {
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}

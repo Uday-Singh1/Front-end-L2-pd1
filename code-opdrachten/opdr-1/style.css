@@ -1,0 +1,342 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem =10px*/
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
+}
+body{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    background: #16213e;
+}
+
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 7rem; /* 70 PX */
+    align-items: center;
+    color: #eee;
+    font-size: 130%;
+    padding: 6rem;
+    text-transform: uppercase;
+    background-color: rgba(36, 36, 86,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav > i{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #e94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+  
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: #CC3636;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background: hsl(350, 79%, 49%);
+    transition: 0.2s;
+}
+
+.banner{
+    height:100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.banner > figure{
+height: 100%;
+width: 100%;
+   background: linear-gradient(to bottom right, rgba(22, 33, 62,0.4), 80%, rgba(233, 69, 96)),  url("../opdr-1/img/pexel-goli.jpg");
+   background-position: bottom;
+   background-size: cover;
+}
+
+.banner > figure > img{
+    height:100%;
+    width:100%;
+
+}
+
+
+.banner > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color:#eee;
+    text-align: center;
+}
+
+.heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 500%;
+}
+
+.heading2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 380%;
+}
+.logo{
+    font-size: 250% !important;
+    color: #eee;
+    border: 0.2rem solid #e94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.over{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: 0.2rem solid #e94560;
+
+}
+
+.over > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.over > header > h2{
+    font-family: 'Great Vibes', cursive;
+   color: #eee;;
+    font-size: 380%;
+}
+
+.over > div{
+  display: flex;  
+  gap: 4rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.over > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over > div > div > p{
+    width: 55ch;
+    color: #eee;
+}
+
+.over > div > img{
+    width: 45rem;
+    height: 45rem;
+    object-fit: cover;
+}
+
+.kenmerken{
+    height: 80vh;  
+    border-bottom: 0.2rem solid #e94560;
+    padding: 4rem;
+  }
+  
+.kenmerken > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 20%;
+    
+}
+.kenmerken > header > h2{
+    font-family: 'Great Vibes', cursive;
+   color: #eee;;
+    font-size: 380%;
+}
+
+.onzekenmerken{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk{
+    list-style: none;
+    color: #eee;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk > p{
+    width:30ch ;
+}
+
+.kenmerkIcon{
+    font-size: 180%;
+    border: 0.3rem solid #e94560;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.gallerij{
+    height: 80vh;
+    padding: 4rem;
+}
+.gallerij > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding: 6rem;
+}
+
+.gallerij > header > h2{
+    font-family: 'Great Vibes', cursive;
+   color: #eee;
+    font-size: 380%;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto > section{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0; 
+   background:linear-gradient(to bottom right, rgba(22, 33, 62,0.4), 80%, rgba(233, 69, 96));
+   transform: scaleX(0);
+   transition: 0.8s;
+   transform-origin: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.foto > section > .cta{
+   opacity: 0; 
+   transition-delay: 0.8s;
+   transition-duration: 0.2s;
+}
+
+.foto:hover > section > .cta{
+    opacity: 1;
+}
+.foto:hover > section{
+    transform: scale(1);
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 75rem) {
+    body{
+        font-size: 1.6rem;
+    }
+    .banner{
+       height: 140rem; 
+    }
+    .over{
+        min-height: 140rem;
+    }
+    .over > header{
+        height: 20%;
+    }
+
+    .over > div{
+        flex-direction: column;
+        height: 80%;
+    }
+    .over > div > div > p{
+        width: 100%;
+        color: #eee;
+    }
+    .over > div > figure{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+
+    .kenmerken{
+        min-height: 120rem;
+    }
+
+    .kenmerk{
+        width: 100%;
+    }
+    .gallerij{
+        height: auto;
+    }
+    .fotos{
+        flex-wrap: wrap;
+    }
+    .foto{
+        height: 20rem;
+        width: 100%;
+    }
+    .foto:hover > section > .cta{
+        opacity: 0;
+    }
+    .foto:hover > section{
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .list{
+
+        flex-direction: column;
+    }
+}
