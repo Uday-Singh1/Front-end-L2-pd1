@@ -1,0 +1,41 @@
+$backgroundColor: #4649FF;
+
+
+$fontVars: (
+    "color":#3c4048,
+    "font":'roboto', 
+    "size": 1.6rem
+);
+
+$tasksVars: (
+    "background": #dddddd,
+    "specialFontColor": #eee,
+    "listItemColor": #ECECEC,
+);
+
+$labelVars: (
+    "green": #379237,
+    "purple": #A03C78,
+    "red":  #e70303,
+    "blue": #3c6ea0,
+    "pink": #c109ff,
+);
+
+$USVars: (
+    "white": rgb(145, 0, 0),
+    "border": 3rem,
+    "border-radius":5rem,
+    "height":20rem,
+    "width":20rem,
+
+);
+$dotVars: (
+    "position": relative
+    "top" 57px
+    "left" 279px
+    "height" 35px
+    "width" 35px
+    "background-color" rgb(183, 185, 31)
+    "border-radius" 50%
+    "display" inline-block,
+);

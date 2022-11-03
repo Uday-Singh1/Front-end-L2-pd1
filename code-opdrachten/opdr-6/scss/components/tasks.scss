@@ -1,0 +1,123 @@
+@use "../abstracts/variables.scss";
+
+.tasks{
+    background:map-get(variables.$tasksVars,"background");
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    overflow-y: scroll;
+    height:max-content;
+    max-height: 80vh;
+  
+    &--hidden{
+        display: none;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__h2{
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    &__headerWrapper{
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+    &__number{
+        background: #003fb3;
+        font-size: 90%;
+        padding:0.5rem;
+        font-weight: 500;
+        color: map-get(variables.$tasksVars, "specialFontColor");
+        border-radius: 0.3rem;
+    }
+
+    &__edit{
+        border:none;
+        background: none;
+        font-size: 120%;
+        font-family: map-get(variables.$fontVars,"font");
+        line-height:1;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        display:flex;
+        flex-direction:column;
+        gap: 2rem;
+    }
+
+    &__listItem{
+        background:map-get(variables.$tasksVars, "listItemColor");
+        font-size: 90%;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0.3rem 0 0 darken(#ECECEC, 15%);
+    }
+
+    &__label{
+        background:map-get(variables.$labelVars,"green");
+        width:max-content;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem; 
+        color:map-get(variables.$tasksVars, "specialFontColor");
+        font-size: 80%;
+    
+
+        &tasks__profile{
+            color: #000;
+            border-radius:6rem;
+            height:20rem;
+            width:20rem;
+
+            
+        }
+
+        &__initials{
+            width: 5rem;
+            height: 5rem;
+            background: rgba(0, 255, 17, 0.804);
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%  ;
+    
+        }
+    &--tomorrow{
+      background:map-get(variables.$labelVars,"red" );  
+    }
+    &--weekend{
+        background:map-get(variables.$labelVars,"purple" ); 
+    }
+    &--nextWeek{
+        background:map-get(variables.$labelVars,"pink" ); 
+     
+    }
+    &--sometime{
+        background:map-get(variables.$labelVars,"blue" ); 
+    }
+  
+    &--US{
+        background: map-get(variables.$USVars, "white" "border-radius" "height" "width");
+    }
+    &--dotVars{
+        background: map-get(variables.$dotVars,"top" "left"  "height"  "width"  "background-color" "border-radius"   "display");
+    }
+
+}
+}
+

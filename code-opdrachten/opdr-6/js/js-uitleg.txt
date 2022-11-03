@@ -1,0 +1,78 @@
+//Haal json data op door te zetten in JS //
+
+fetch("/data/trellies.json").then(
+    function (response) {
+        return response.json();
+    }
+
+
+/*header*/ 
+let toBeAddedHeader = document.createElement("header");
+toBeAddedHeader.classList.add("tasks__header");
+toBeAddedSection.appendChild(toBeAddedHeader);
+
+toBeAdded = het zelfde als een class / <Header etc.>
+toBeAddedHeader.classList.add("tasks__header"); //geeft class aan// 
+toBeAddedSection.appendChild(toBeAddedHeader); //een section aan maken in de header//
+
+   
+ /*h2*/
+let toBeAddedH2 = document.createElement("h2");
+toBeAddedH2.classList.add("tasks__h2");
+toBeAddedH2.innerText = data.title;                     // Is de text in de kaartjes // 
+toBeAddedHeader.appendChild(toBeAddedH2);
+
+    /*header-wrap*/
+        toBeAddedWrapper = document.createElement("div");
+        toBeAddedWrapper.classList.add("tasks__headerWrapper"); //Wrapt de header met de kaartjes //
+        toBeAddedHeader.appendChild(toBeAddedWrapper);
+
+         /*Numbers*/
+        let toBeAddedNumber = document.createElement("div");
+        toBeAddedNumber.classList.add("tasks__number");      //code om de number te veranderen op basis van aantal (tasks) in de trello card // stijgt bij toevoeging //
+        toBeAddedNumber.innerText = data.activities.length;
+        toBeAddedWrapper.appendChild(toBeAddedNumber);
+
+/*Button*/
+        let toBeAddedButton = document.createElement("button");
+        toBeAddedButton.classList.add("tasks__edit");           // button voor de  3 puntjes rechtsboven in de script, heeft interactie maar leid en doet niet echt wat // 
+        toBeAddedButton.innerText = "...";
+        toBeAddedWrapper.appendChild(toBeAddedButton);
+
+        
+
+          let toBeAddedUl = document.createElement("ul");
+        toBeAddedUl.classList.add("tasks__list");
+        toBeAddedSection.appendChild(toBeAddedUl);
+        for (let i = 0; i < data.activities.length; i++) {      // functies en maakt de lists en wordt aangepast op verandering van de json data 
+            let toBeAddedLi = document.createElement("li");
+            toBeAddedLi.classList.add("tasks__listItem");
+            toBeAddedUl.appendChild(toBeAddedLi);
+          
+
+            let toBeAddedLabel = document.createElement("label");
+            toBeAddedLabel.classList.add("tasks__label");
+            if (data.activities[i].extraClass !== "") {                                             // functies en maakt de lists en wordt aangepast op verandering van de json data 
+                toBeAddedLabel.classList.add("tasks__label--" + data.activities[i].extraClass);
+               
+
+                     }
+            /*profilepic*/ 
+            toBeAddedLabel.innerText = data.activities[i].label;
+            toBeAddedLi.appendChild(toBeAddedLabel);
+            let toBeAddedSpan = document.createElement("span")          //maakt de profiel US zelf aan 
+            let toBeAddedInintials = document.createElement("figure")
+    
+            let toBeAddedP = document.createElement("p");
+            toBeAddedP.innerText = data.activities[i].description;
+            toBeAddedLi.appendChild(toBeAddedP);
+            toBeAddedSpan.classList.add("wrapper")
+            toBeAddedLi.appendChild(toBeAddedSpan)
+            toBeAddedInintials.classList.add("tasks__label__initials");         //past de plaatsing van de profiel foto aan (kleur : groen)
+            toBeAddedInintials.innerText = data.activities[i].ini;
+            toBeAddedSpan.appendChild(toBeAddedInintials)     
+        }
+
+        
+    }
+

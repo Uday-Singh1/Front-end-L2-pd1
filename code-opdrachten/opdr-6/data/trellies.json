@@ -1,0 +1,41 @@
+{
+    "title": "hET LEEFT",
+    "activities": [
+        {
+            "description" : "Trellie afmaken",
+            "label": "Vandaag",
+            "extraClass": "none",
+            "ini": "US"
+            
+        },
+
+        {
+            "description" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum id, qui quidem cumque fugiat incidunt. Odit, in nesciunt eum tempora cum a aspernatur natus cumque aut voluptates expedita iste velit.",
+            "label": "Morgen",
+            "extraClass": "tomorrow"
+        },
+        {
+            "description" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum id, qui quidem cumque fugiat incidunt. Odit, in nesciunt eum tempora cum a aspernatur natus cumque aut voluptates expedita iste velit.",
+            "label": "Weekend",
+            "extraClass": "weekend"
+
+        },
+
+        {
+            "description" : "Trellie afmaken",
+            "label": "Volgende week",
+            "extraClass": "nextWeek"
+            
+        },
+      
+
+        {
+            "description" : "Trellie afmaken",
+            "label": "ooit",
+            "extraClass": "sometime"
+        }
+      
+    
+    ]
+    
+    }
