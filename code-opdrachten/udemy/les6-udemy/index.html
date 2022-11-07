@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>UdemyGame</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/be03e873de.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+            <ul class="ul_header">
+                <img class="logo_udemy" src="./img/Udemy-Logo-2021-present.png" alt="">
+                
+                <li class="li_header">
+                    <p>Categorieën</p>
+                </li>
+                <li class="li_header li_search-bar">
+                    <img class="search-bar_header_icon" src="./img/icons8-search-30.png" alt="">
+                    <input class="search_bar_header" type="text" placeholder="Alles zoeken">
+                </li>
+                <li class="li_header">Udemy+</li>
+                <li class="li_header">Udemy-Connect</li>
+                <li class="li_header">
+                    <img class="cart_header" src="./img/icons8-shopping-cart-24.png" alt="">
+                </li>
+                <li class="li_header">
+                    <button class="login_header">Inloggen</button>
+                </li>
+                <li class="li_header">
+                    <button class="inschrijven_header">Inschrijven</button>
+                </li>
+                <li class="li_header">
+                    <img class="wereldbold_header" src="./img/icons8-geography-50.webp" alt="">
+                </li>
+            </ul>
+    </header>
+
+    <main>
+        <!--  -->
+        <section class="section_main_udemy">
+            <img class="section_main_udemy_foto" src="https://thenerdstash.com/wp-content/uploads/2022/08/assassins-creed-mirage-is-the-sequels-name-kopya.jpg" alt="">
+        </section>
+        <section class="section_main_udemy_cardje">
+            <div class="div_main_udemy_cardje">
+                <h2 class="h2_cardje">Game tot een Nieuwe Level</h2>
+                <p class="p_cardje">Login en zie alles over gaming 
+                    met sales en meer!
+                </p>
+            </div>
+        </section>
+
+        <article class="article_udemy_articles">
+            <section class="section_article_udemy">
+                <h1 class="h1_article_udemy">Press and go!</h1>
+                <p class="p_article_udemy">Druk direct naar de volgende pagina om alles te weten en actie te nemen</p>
+            </section>
+            <!-- carousel article -->
+            <section class="section_carousel_udemy">
+                <article class="article_carousel_udemy">
+                    <li class="div_carousel" onclick="opentabs('python')">Nieuws</li>
+                    <li class="div_carousel" onclick="opentabs('excel')">Games</li>
+                    <li class="div_carousel" onclick="opentabs('webontwikkeling')">Kopen</li>
+                    <li class="div_carousel" onclick="opentabs('javascript')">Verkopen</li>
+                    <li class="div_carousel" onclick="opentabs('datawetenschap')">Ruilen</li>
+                    <li class="div_carousel" onclick="opentabs('aws-certificering')">Releases</li>
+                    <li class="div_carousel" onclick="opentabs('tekenen')">Reviews</li>
+                </article>
+                <div id="python" class="div_text_carousel carousl">
+                    <h1>What's on the menu</h1>
+                    <p class="p_carousel">Weet wat je te wachten staat komen de tijd met actuele nieuws , geruchten, officiele en nog meer gaming nieuws.</p>
+                    <button class="button_carousel_text">Nieuws</button>
+                </div>
+                <div id="excel" class="div_text_carousel carousl" style="display:none">
+                    <h1>Gaming</h1>
+                    <p class="p_carousel">Hier zie je echt alles over games, verkopers,nieuws,acties, updates, Awards en nog veel meer! </p>
+                        <button class="button_carousel_text">Verken Gaming</button>
+                </div>
+                <div id="webontwikkeling" class="div_text_carousel carousl" style="display:none">
+                    <h1>Koop games</h1>
+                    <p class="p_carousel">Koop hier je games en  scoor het voor een
+                         lagere prijs, met Udemy+ krijg je permanente korting op alle aankopen die je doet.
+
+                    </p>
+                        <button class="button_carousel_text">Kopen</button>
+                </div>
+                <div id="javascript" class="div_text_carousel carousl" style="display:none">
+                    <h1>Verkoop en draai wat centjes voor jezelf</h1>
+                    <p class="p_carousel">Nadat je inlogt en je eigen pagina maakt kan je jezelf aanmelden voor de Udemy Market en je eigen gebruikten games verkopen, en dan je eigen zaak draaien 
+                        druk hier voor meer informatie en hoe je jouw eigen Mini-Business kan opzetten.
+                    </p>
+                        <button class="button_carousel_text">Verkopen</button>
+                </div>
+                <div id="datawetenschap" class="div_text_carousel carousl" style="display:none">
+                    <h1>Ruilen</h1>
+                    <p class="p_carousel">Ruil je games hier in voor anderen en nog meer, Alles is officieel geregeld dus alles is 100% veilig</p>
+                        <button class="button_carousel_text">Ruilen</button>
+                </div>
+                <div id="aws-certificering" class="div_text_carousel carousl" style="display:none">
+                    <h1>Check alles over Releases</h1>
+                    <p class="p_carousel">Of je op werk bent, thuis of school hou je zelf bezig 
+                        met nieuws over alles dat nieuw is binnen de game wereld, 
+                        game releases,updates en nog veel meer.</p>
+                        <button class="button_carousel_text">Druk hier!</button>
+                </div>
+                <div id="tekenen" class="div_text_carousel carousl" style="display:none">
+                    <h1>Reviewing</h1>
+                    <p class="p_carousel">Reviews lezen is een van de belangrijkste 
+                        onderdelen en helpt je echt met een keuzen maken voor games,
+                         al onze revieuws zijn officieel 100% Vers en nieuw.</p>
+                        <button class="button_carousel_text">Druk hier!</button>
+                </div>
+            </section>
+            <!-- einde carousel article -->
+            <!-- hier komen de kaartjes -->
+            
+
+            <section class="section_cardjes_courses_udemy">
+                <h1 class="section_cardjes_courses_udemy_h1">Hoogste  beoordeelde games momenteel</h1>
+                <article class="article_cardjes_courses_udem">
+                    <div class="div_cardjes_courses">
+                        <img src="https://images4.alphacoders.com/601/thumb-1920-601157.jpg" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Horizon zero dawn 2</h2>
+                            <p class="author_name_p">Guerrilla Games</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,7</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€49,99</p>
+                                    <p class="courses_prijs-previes">€64,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="https://wealthofgeeks.com/wp-content/uploads/2021/03/RDR2-e1616768221379.jpg" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Red dead Redemption 2</h2>
+                            <p class="author_name_p">Rockstar Games</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">5</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€35,99</p>
+                                    <p class="courses_prijs-previes">€59,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="https://preview.redd.it/yo9dbxmeikl81.jpg?auto=webp&s=c5fc1307b3affbaac3a82e42582cca7da57103e2" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Fifa 23</h2>
+                            <p class="author_name_p">EA-Sports</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,2</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€64,99</p>
+                                    <p class="courses_prijs-previes">€70.00</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgq3EqfChDMgNxrP-KHYu7-gnYyzMtr0u0Rns-vkfLgi-FpgZRUAYwT1IgpYtpWjk_pz8&usqp=CAU" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Assassin's Creed Mirage</h2>
+                            <p class="author_name_p">Ubisoft</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,8</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€65,99</p>
+                                    <p class="courses_prijs-previes">€70,00</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg" alt="" class="udemy_courses_cardjes_images">
+                        <div class="overlay"></div>
+                        <article class="article_text_courses_cardjes">
+                            <h5>Call of duty Modernwarefare 2</h2>
+                            <p class="author_name_p">Infinity Ward</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4.9</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€75,99</p>
+                                    <p class="courses_prijs-previes">€80,99</p>
+                                </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+
+            
+        </article>
+
+        <!-- Uitgelichte onderwerpen per categorie -->
+        <section>
+            <article class="articles_categorien_courses">
+            <h2>Gemiddelde fan base count per categorie</h2>
+            <div class="div_categorien_courses">
+                <article class="article_categorie">
+                    <div class="div_categories">
+                        <h3>Action</h3>
+                        <sub>60+ million Fans</sub>
+                        
+                        
+                    </div>
+                    <div class="div_categories">
+                        <h3>Adventure</h3>
+                        <sub>90+ million Fans</sub>
+                     
+                      
+                    </div>
+                    <div class="div_categories">
+                        <h3>Horror</h3>
+                        <sub>44+ million Fans</sub>
+                       
+                     
+                    </div>
+                    <div class="div_categories">
+                        <h3>Mystery</h3>
+                        <sub>29+ Million Fans</sub>
+                    </div>
+                </article>
+                <button class="button_categorie">Meer onderwerpen verkennen</button>
+            </div>
+        </article>
+
+        <!-- Word een instructeur -->
+
+        <article class="instructie__article">
+            <section class="section_instractor">
+                <div class="div_instractor_image">
+                    <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F01%2Fgta-v-franklin-lamar-voice-actors-recreate-haircut-scene-000.jpg?w=960&cbr=1&q=90&fit=max" alt="Franklin Clinton -GTA5" class="intructie_foto">
+                </div>
+                <div class="div_intractor_text">
+                    <h1 class="h1_intractor">Ruilen</h1>
+                    <p class="p_instractor">Ruil je games in voor iets leuks, zoals een andere game of gebruik het als een soort kortingskaart voor je volgende en dat scheelt je zeker weinig Dus PAK JE KANS!.</p>
+                        <button class="button_instractor">Begin met Ruilen</button>
+                </div>
+            </section>
+        </article>
+
+        <!-- Trusted by over 12.500 great teams -->
+        <section class="section_trusted_by_team">
+            <article class="article_trusted_by_team">
+                <h1 class="h1_trusted_by_team">Vertrouwd door meerdere game bedrijven</h1>
+                <p class="p_trusted_by_team">Zie hier 4 grootste Colabs</p>
+                <div class="div_trusted_by_team">
+                    <img src="./img/nasdaq-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/volkswagen-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/box-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/netapp-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/eventbrite-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/tcs-dark.svg" alt="" class="img_trusted_by_team">
+                </div>
+            </article>
+        </section>
+
+        <!-- udemy bussiness -->
+        <section class="section_udemy_bussiness">
+            <article class="article_udemy_bussiness">
+                <div class="div_text_udemy_bussiness">
+                    <img class="img_text_udemy_bussiness" src="./img/logo-ub.svg" alt="">
+                    <p>
+                       Krijg onbeperkte kortingen, wees de eerste voor nieuws en maak kans op grote giveaway's 
+                    </p>
+                    <button class="buttonimg_text_udemy_bussiness">Neem Udemy Plus</button>
+                </div>
+                <div class="div_img_udemy_bussiness">
+                    <img class="imagediv_img_udemy_bussiness"  src="https://w0.peakpx.com/wallpaper/40/599/HD-wallpaper-video-game-red-dead-online-red-dead-redemption-2.jpg" alt="RDR2">
+                </div>
+            </article>
+
+            <!-- Breng verandering in je leven door middel van educatie -->
+
+        </section>
+
+        <section class="breng_verandering">
+            <article class="article_breng_verandering">
+                <div class="div_breng_verandering_image">
+                    <img src="https://cdn.mos.cms.futurecdn.net/my8AUCgUhKERqBBwdPQuXG.jpg" alt="" class="img_breng_veranderingen">
+                </div>
+
+                <div class="div_breng_veranderingen_text">
+                    <h1 class="h1_div_breng_veranderingen_text">Breng de community bij elkaar </h1>
+                    <p class="p_div_breng_veranderingen_text">We hebben genoeg liefde❤️ voor gaming,Laten we dat dan ook een 
+                        standaard maken voor ieder persoon,meld je aan en join onze discord community </p>
+                    <button class="button_breng_veranderingen">Join the FAM</button>
+                </div>
+            </article>
+        </section>
+
+
+        <footer class="footer">
+            <section class="section_footer">
+                <article class="article_footer">
+                    <div class="ul_footer">
+                        <li class="li_footer">Udemy+</li>
+                        <li class="li_footer">Udemy-Connect</li>
+                        <li class="li_footer">De app Downloaden</li>
+                        <li class="li_footer">Info over ons</li>
+                        <li class="li_footer">Contact opnemen</li>
+                    </div>
+                    <div class="ul_footer">
+                        <li class="li_footer">Vacatures</li>
+                        <li class="li_footer">Blog</li>
+                        <li class="li_footer">Hulp en ondersteuning</li>
+                        <li class="li_footer">Partner</li>
+                        <li class="li_footer">Investeerders</li>
+                    </div>
+                    <div class="ul_footer">
+                        <li class="li_footer">Voorwaarden</li>
+                        <li class="li_footer">Privacybeleid</li>
+                        <li class="li_footer">Cookie-instellingen</li>
+                        <li class="li_footer">Sitemap</li>
+                        <li class="li_footer">Toegankelijkheidsverklaring</li>
+                    </div>
+                </article>
+                
+
+                <div class="ul_bol_footer">
+                    <img src="./img/icons8-geography-52.webp" alt="" class="img_bol_footer">
+                    <p>Nederlands</p>
+                </div>
+
+                
+            </section>
+
+                <article class="article_icon_author">
+                    <div class="div_icon_author">
+                        <img src="./img/logo-udemy-inverted.svg" alt="" class="img_icon_author">
+                    </div>
+                    <div class="div_author_text">
+                        <p>© 2022 Udemy, Inc.</p>
+                    </div>
+                </article>
+
+
+           
+        </footer>
+        <!--  -->
+    </main>
+</body>
+</html>

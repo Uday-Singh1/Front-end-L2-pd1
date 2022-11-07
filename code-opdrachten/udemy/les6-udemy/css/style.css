@@ -1,0 +1,566 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1rem 0 3rem 1rem rgba(0, 0, 0, 0.2);
+  list-style: none;
+  height: 8rem;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.li_header {
+  list-style: none;
+  cursor: pointer;
+}
+
+.li_search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 3rem;
+}
+
+.search-bar_header_icon {
+  position: relative;
+  left: 4rem;
+  width: 2.5rem;
+  height: 100%;
+  object-fit: contain;
+}
+
+.search_bar_header {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  padding: 2rem 5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.9);
+}
+
+.logo_udemy {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.login_header {
+  width: 8rem;
+  height: 4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.9);
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.inschrijven_header {
+  width: 10rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-weight: 600;
+}
+
+.inschrijven_header:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.wereldbold_header {
+  width: 4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.9);
+  padding: 0.8rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .section_main_udemy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_main_udemy .section_main_udemy_foto {
+  width: 85%;
+  height: 40rem;
+  object-fit: cover;
+}
+main .section_main_udemy_cardje {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 5rem;
+  width: 53%;
+  bottom: 32rem;
+}
+main .section_main_udemy_cardje .h2_cardje {
+  width: 25ch;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+main .section_main_udemy_cardje .p_cardje {
+  width: 38ch;
+}
+main .section_main_udemy_cardje .div_main_udemy_cardje {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 42.5rem;
+  height: 20rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.1);
+  opacity: 80%;
+}
+main .article_udemy_articles {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 12rem;
+  width: 85%;
+  padding: 2rem;
+  gap: 2rem;
+}
+main .article_udemy_articles .section_article_udemy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .article_udemy_articles .section_article_udemy .h1_article_udemy {
+  font-size: 4rem;
+}
+main .article_udemy_articles .section_article_udemy .p_article_udemy {
+  font-size: 2rem;
+  width: 70ch;
+}
+main .article_udemy_articles .section_carousel_udemy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .article_udemy_articles .section_carousel_udemy .article_carousel_udemy {
+  display: flex;
+  gap: 2rem;
+}
+main .article_udemy_articles .section_carousel_udemy .article_carousel_udemy .div_carousel {
+  color: rgba(0, 0, 0, 0.6);
+  list-style: none;
+}
+main .article_udemy_articles .section_carousel_udemy .article_carousel_udemy .div_carousel:hover {
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+main .article_udemy_articles .section_carousel_udemy .article_carousel_udemy .div_carousel .article_carousel_horizontal {
+  height: 50rem;
+  background: green;
+}
+main .article_udemy_articles .section_carousel_udemy .div_text_carousel {
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  height: 24rem;
+  gap: 1rem;
+}
+main .article_udemy_articles .section_carousel_udemy .div_text_carousel .p_carousel {
+  width: 75%;
+}
+main .article_udemy_articles .section_carousel_udemy .carousl {
+  display: flex;
+  flex-direction: column;
+}
+main .article_udemy_articles .section_carousel_udemy .carousl .button_carousel_text {
+  min-width: 12rem;
+  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 4rem;
+  border: 0.1rem solid;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 8rem;
+  height: 60rem;
+  gap: 2rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .section_cardjes_courses_udemy_h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem {
+  display: flex;
+  gap: 1.3rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses {
+  width: 25rem;
+  height: 35rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.111rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_reviews-star_courses {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_reviews-star_courses .p_review_numbers {
+  color: rgb(155, 106, 14);
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_reviews-star_courses .li_revieuw {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_reviews-star_courses .li_revieuw .fa-star {
+  font-size: 1.5rem;
+  color: orange;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_prijs_courses-now {
+  display: flex;
+  gap: 2rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_prijs_courses-now .courses_prijs-now {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .article_text_courses_cardjes .div_prijs_courses-now .courses_prijs-previes {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+  font-size: 1.8rem;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .div_cardjes_courses:hover .overlay {
+  opacity: 1;
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: 0.5s ease;
+  background: rgba(0, 0, 0, 0.2);
+}
+main .article_udemy_articles .section_cardjes_courses_udemy .article_cardjes_courses_udem .div_cardjes_courses .udemy_courses_cardjes_images {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+main .articles_categorien_courses {
+  background: #f7f9fa;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  padding: 0 14rem;
+  flex-direction: column;
+}
+main .articles_categorien_courses .div_categorien_courses {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+  padding: 2rem 0;
+}
+main .articles_categorien_courses .div_categorien_courses .article_categorie {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .articles_categorien_courses .div_categorien_courses .article_categorie .div_categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+main .articles_categorien_courses .div_categorien_courses .button_categorie {
+  width: 22rem;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+main .articles_categorien_courses .div_categorien_courses .button_categorie:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+main .instructie__article {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+main .instructie__article .section_instractor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+main .instructie__article .section_instractor .div_instractor_image {
+  width: 45rem;
+}
+main .instructie__article .section_instractor .div_instractor_image .intructie_foto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .instructie__article .section_instractor .div_intractor_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .instructie__article .section_instractor .div_intractor_text .h1_intractor {
+  font-weight: 600;
+  font-size: 3rem;
+}
+main .instructie__article .section_instractor .div_intractor_text .p_instractor {
+  width: 38ch;
+}
+main .instructie__article .section_instractor .div_intractor_text .button_instractor {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+main .instructie__article .section_instractor .div_intractor_text .button_instractor:hover {
+  background: rgb(0, 0, 0);
+}
+main .section_trusted_by_team {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .section_trusted_by_team .article_trusted_by_team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding: 2rem;
+  background: #b8ddef;
+  height: 25rem;
+}
+main .section_trusted_by_team .article_trusted_by_team .h1_trusted_by_team {
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .section_trusted_by_team .article_trusted_by_team .div_trusted_by_team {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12rem;
+}
+main .section_udemy_bussiness {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50rem;
+}
+main .section_udemy_bussiness .article_udemy_bussiness {
+  display: flex;
+  padding: 2rem;
+  width: 50%;
+  height: 40rem;
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_text_udemy_bussiness {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_text_udemy_bussiness .buttonimg_text_udemy_bussiness {
+  width: 20rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  cursor: pointer;
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_text_udemy_bussiness .buttonimg_text_udemy_bussiness:hover {
+  background: rgb(0, 0, 0);
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_text_udemy_bussiness .img_text_udemy_bussiness {
+  width: 80%;
+  object-fit: contain;
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_img_udemy_bussiness {
+  display: flex;
+}
+main .section_udemy_bussiness .article_udemy_bussiness .div_img_udemy_bussiness .imagediv_img_udemy_bussiness {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .breng_verandering {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+main .breng_verandering .article_breng_verandering {
+  display: flex;
+  justify-content: center;
+}
+main .breng_verandering .article_breng_verandering .div_breng_verandering_image {
+  display: flex;
+  height: 40rem;
+}
+main .breng_verandering .article_breng_verandering .div_breng_verandering_image .img_breng_veranderingen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .breng_verandering .article_breng_verandering .div_breng_veranderingen_text {
+  display: flex;
+  justify-content: flex-start;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40ch;
+}
+main .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .h1_div_breng_veranderingen_text {
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .p_div_breng_veranderingen_text {
+  width: 36ch;
+}
+main .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .button_breng_veranderingen {
+  width: 20rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .button_breng_veranderingen:hover {
+  background: rgb(0, 0, 0);
+}
+
+.footer {
+  width: 100%;
+  height: 30rem;
+  background: #1c1d1f;
+  display: flex;
+  flex-direction: column;
+}
+.footer .section_footer {
+  padding: 4rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footer .section_footer .article_footer {
+  display: flex;
+  gap: 15rem;
+}
+.footer .section_footer .article_footer .ul_footer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+}
+.footer .section_footer .article_footer .ul_footer .li_footer {
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footer .section_footer .article_footer .ul_footer .li_footer:hover {
+  text-decoration: underline;
+}
+.footer .section_footer .ul_bol_footer {
+  display: flex;
+  position: relative;
+  bottom: 2rem;
+  width: 14rem;
+  align-items: center;
+  height: 4rem;
+  padding: 1rem;
+  border: 0.1rem solid rgb(255, 253, 253);
+  cursor: pointer;
+}
+.footer .section_footer .ul_bol_footer:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer .section_footer .ul_bol_footer .img_bol_footer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer .article_icon_author {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+  color: white;
+}
+.footer .article_icon_author .div_icon_author {
+  width: 10rem;
+}
+.footer .article_icon_author .div_icon_author .img_icon_author {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style.css.map */

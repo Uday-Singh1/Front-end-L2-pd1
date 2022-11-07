@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "les6udemy",
+			"path": "../../../../../../Downloads/front-jaar2-main/les6udemy"
+		},
+		{
+			"name": "udemy",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "les6udemy"
+	}
+}
