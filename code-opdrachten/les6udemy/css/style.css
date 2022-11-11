@@ -362,10 +362,11 @@ main .articles_categorien_courses .button_categorie:hover {
   justify-content: center;
   gap: 4rem;
 }
-.instructie__article .section_instractor .div_instractor_image .Genshin {
+.instructie__article .section_instractor .div_instractor_image .Mc {
   min-width: 40rem;
   max-height: 30rem;
   object-fit: contain;
+  margin-left: -5rem;
 }
 .instructie__article .section_instractor .div_instractor_image .intructie_foto {
   width: 100%;
@@ -497,8 +498,8 @@ main .articles_categorien_courses .button_categorie:hover {
   height: 40rem;
 }
 .breng_verandering .article_breng_verandering .div_breng_verandering_image .img_breng_veranderingen {
-  max-width: 100%;
-  min-height: 40rem;
+  max-width: 80%;
+  max-height: 31rem;
   object-fit: cover;
 }
 .breng_verandering .article_breng_verandering .div_breng_veranderingen_text {
@@ -514,7 +515,7 @@ main .articles_categorien_courses .button_categorie:hover {
   font-weight: 600;
 }
 .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .p_div_breng_veranderingen_text {
-  width: 36ch;
+  width: 34ch;
 }
 .breng_verandering .article_breng_verandering .div_breng_veranderingen_text .button_breng_veranderingen {
   width: 20rem;
@@ -620,10 +621,6 @@ main .articles_categorien_courses .button_categorie:hover {
   body .article_udemy_articles .section_article_udemy .p_article_udemy {
     width: 45ch;
   }
-  body .div_carousel:nth-child(2), body .div_carousel:nth-child(4),
-body .div_carousel:nth-child(3), body .div_carousel:nth-child(5) {
-    display: none;
-  }
   body .div_categorien_courses .article_categorie .div_categories:nth-child(2), body .div_categorien_courses .article_categorie .div_categories:nth-child(3) {
     display: none;
   }
@@ -715,6 +712,10 @@ body .div_carousel:nth-child(3), body .div_carousel:nth-child(5) {
   body .article_footer {
     display: flex;
     gap: 4rem;
+  }
+  body .article_breng_verandering {
+    display: flex;
+    flex-direction: column;
   }
 }
 

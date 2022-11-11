@@ -356,10 +356,11 @@ main{
     .div_instractor_image{
         
 
-        .Genshin{
+        .Mc{
             min-width: 40rem;
             max-height: 30rem;
             object-fit: contain;
+            margin-left: -5rem;
         }
 
         .intructie_foto{
@@ -527,8 +528,8 @@ main{
             height: 40rem;
             
             .img_breng_veranderingen{
-                max-width: 100%;
-                min-height: 40rem;
+                max-width: 80%;
+                max-height: 31rem;
                 object-fit: cover;
             }
         }
@@ -547,7 +548,7 @@ main{
             }
 
             .p_div_breng_veranderingen_text{
-                width: 36ch;
+                width: 34ch;
             }
 
             .button_breng_veranderingen{

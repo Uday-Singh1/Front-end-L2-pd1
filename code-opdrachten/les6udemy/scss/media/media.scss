@@ -40,11 +40,11 @@
             
         }
 
-        .div_carousel:nth-child(2),  .div_carousel:nth-child(4), 
-        .div_carousel:nth-child(3), .div_carousel:nth-child(5){
-            display: none;
+        // .div_carousel:nth-child(2),  .div_carousel:nth-child(4), 
+        // .div_carousel:nth-child(3), .div_carousel:nth-child(5){
+        //     display: none;
 
-        }
+        // }
 
         .div_categorien_courses{
 
@@ -212,6 +212,11 @@
         .article_footer{
             display: flex;
             gap: 4rem;
+        }
+
+        .article_breng_verandering{
+            display: flex;
+            flex-direction: column;
         }
     }
 
