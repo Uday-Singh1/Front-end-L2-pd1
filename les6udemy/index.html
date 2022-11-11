@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Udemio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/be03e873de.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+            <ul class="ul_header">
+                <img class="logo_udemy" src="./img/Udemy-Logo-2021-present.png" alt="">
+                
+                <li class="li_header li_hide">
+                    <p>Categorieën</p>
+                </li>
+                <li class="li_header li_search-bar">
+                    <img class="search-bar_header_icon" src="./img/icons8-search-30.png" alt="search">
+                    <input class="search_bar_header" type="text" placeholder="Alles zoeken">
+                </li>
+                <li class="li_header li_hide" >Udemy+</li>
+                <li class="li_header li_hide" >Nieuws</li>
+                <li class="li_header li_hide" >
+                    <img class="cart_header" src="./img/icons8-shopping-cart-24.png" alt="Shopping-card">
+                </li>
+                <li class="li_header">
+                    <button class="login_header li_hide" >Inloggen</button>
+                </li>
+                <li class="li_header">
+                    <button class="inschrijven_header li_hide" >Inschrijven</button>
+                </li>
+                <li class="li_header">
+                    <img class="wereldbold_header li_hide" src="./img/icons8-geography-50.webp" alt="">
+                </li>
+                <i class="fa-solid fa-bars side_bars_icon"></i>
+            </ul>
+    </header>
+
+    <main>
+        <!--  -->
+        <section class="section_main_udemy">
+            <img class="section_main_udemy_foto" src="/img/horiz.webp" alt="Forza Horizon 5">
+        </section>
+        <section class="section_main_udemy_cardje">
+            <div class="div_main_udemy_cardje">
+                <h2 class="h2_cardje">GAME HARD</h2>
+                <p class="p_cardje">Zie hier alles over games en acties!</p>
+            </div>
+        </section>
+
+        <article class="article_udemy_articles">
+            <section class="section_article_udemy">
+                <h1 class="h1_article_udemy">Check it out!</h1>
+                <p class="p_article_udemy">Check de meest handige functies van onze website</p>
+            </section>
+            <!-- carousel article -->
+            <section class="section_carousel_udemy">
+                <article class="article_carousel_udemy">
+                    <li class="div_carousel" onclick="opentabs('Nieuws')">Nieuws</li>
+                    <li class="div_carousel" onclick="opentabs('games')">Games</li>
+                    <li class="div_carousel" onclick="opentabs('acties')">Acties</li>
+                    <li class="div_carousel" onclick="opentabs('kopen')">Kopen</li>
+                    <li class="div_carousel" onclick="opentabs('verkopen')">Verkopen</li>
+                </article>
+                <div id="Nieuws" class="div_text_carousel carousl">
+                    <h1>De verse en sappige nieuws over games en meer!</h1>
+                    <p class="p_carousel">
+                        De verse en sappige nieuws over games en meer, lees over game updates, releases, pre-orders, waar de game-developers mee bezig zijn en meer! </p>
+                    <button class="button_carousel_text">Bekijk Nieuws</button>
+                </div>
+                <div id="games" class="div_text_carousel carousl" style="display:none">
+                    <h1>Gaming en meer</h1>
+                    <p class="p_carousel">Games en meer, acties,updates.</p>
+                        <button class="button_carousel_text">Press and go</button>
+                </div>
+                <div id="acties" class="div_text_carousel carousl" style="display:none">
+                    <h1>Nieuwe acties en sales</h1>
+                    <p class="p_carousel">Kijk uit voor nieuwe acties en sales, voor de voordeligste prijzen</p>
+                        <button class="button_carousel_text">Bekijk Acties</button>
+                </div>
+                <div id="kopen" class="div_text_carousel carousl" style="display:none">
+                    <h1>Koop op de meest voordeligste manier</h1>
+                    <p class="p_carousel">Koop en ruil games in voor korting of een hele game,via onze Udemy Marketplace</p>
+                        <button class="button_carousel_text">Koop hier!</button>
+                </div>
+                <div id="verkopen" class="div_text_carousel carousl" style="display:none">
+                    <h1>Verkoop wat je niet nodig hebt</h1>
+                    <p class="p_carousel">Wil je een nieuwe game kopen of ga je stoppen?, maak een account en zet je games op verkopen, draai wat centjes, traden tussen jouw en andere users is ook mogelijk en alles is 100% veilig geregeld</p>
+                        <button class="button_carousel_text">Verkopen!</button>
+                </div>
+            </section>
+            <!-- einde carousel article -->
+            <!-- hier komen de kaartjes -->
+            
+
+            <section class="section_cardjes_courses_udemy">
+                <h1 class="section_cardjes_courses_udemy_h1">Hardcore games</h1>
+                <article class="article_cardjes_courses_udemy_udem">
+                    <div class="div_cardjes_courses">
+                        <img src="/img/mw2.webp" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Call of Duty Modern warfare II...</h2>
+                            <p class="author_name_p">Ghost</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,4</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(32)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€16,99</p>
+                                    <p class="courses_prijs-previes">€34,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="/img/rdr21.webp" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Red Dead Redemption 2...</h2>
+                            <p class="author_name_p">Arthur</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">5</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€25,99</p>
+                                    <p class="courses_prijs-previes">€54,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="/img/fifa23.webp" alt="" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>FIFA 23...</h2>
+                            <p class="author_name_p">Vini Jr</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,0</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€35,99</p>
+                                    <p class="courses_prijs-previes">€64,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="/img/ac-mirage.webp" alt="Assassin's creed mirage" class="udemy_courses_cardjes_images">
+                        <article class="article_text_courses_cardjes">
+                            <h5>Assassin's Creed Mirage...</h2>
+                            <p class="author_name_p">Basim</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">4,4</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€45,99</p>
+                                    <p class="courses_prijs-previes">€89,99</p>
+                                </div>
+                        </article>
+                    </div>
+
+                    <div class="div_cardjes_courses">
+                        <img src="/img/God-of-War-Ragnarok.webp" alt="" class="udemy_courses_cardjes_images">
+                      
+                        <article class="article_text_courses_cardjes">
+                            <h5>God of war:Ragnarok...</h2>
+                            <p class="author_name_p">Kratos</p>
+                            <div class="div_reviews-star_courses">
+                                <p class="p_review_numbers">5,0</p>
+                                <li class="li_revieuw">
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <i class="fa-solid fa-star revieuw_icon-orange"></i>
+                                <sup>(29)</sup>
+                                </li>
+                                </div>
+                                <div class="div_prijs_courses-now">
+                                    <p class="courses_prijs-now">€32,99</p>
+                                    <p class="courses_prijs-previes">€55,99</p>
+                                </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+
+            
+        </article>
+
+        <!-- Uitgelichte onderwerpen per categorie -->
+        <section>
+            <article class="articles_categorien_courses">
+            <h2>Meest populaire games op dit moment</h2>
+            <div class="div_categorien_courses">
+                <article class="article_categorie">
+                    <div class="div_categories">
+                        <h3 class="h1_div_categories">Action games</h3>
+                        <sub class="p_div_categories">God of war:Ragnarok</sub>
+                        <sub class="sub_div_categories">Red dead redemption 2</sub>
+                        <sub class="p_div_categories">Assassin's creed Mirage</sub>
+                        <sub class="sub_div_categories">Call of duty MW II</sub>
+                        
+                    </div>
+                    <div class="div_categories">
+                        <h3 class="h1_div_categories">Role-playing games.</h3>
+                        <sub class="p_div_categories">God of war</sub>
+                        <sub class="sub_div_categories">Dungeons & Dragons</sub>
+                        <sub class="p_div_categories">Cyberpunk 2077</sub>
+                        <sub class="sub_div_categories">Witcher 3: Wildhunt</sub>
+                        
+                    </div>
+                    <div class="div_categories">
+                        <h3 class="h1_div_categories">Sports games.</h3>
+                        <sub class="p_div_categories">Fifa 23</sub>
+                        <sub class="sub_div_categories">Madden NFL 22</sub>
+                        <sub class="p_div_categories">NBA 2K23</sub>
+                        <sub class="sub_div_categories">F1 2022</sub>
+                        
+                    </div>
+                    <div class="div_categories">
+                        <h3 class="h1_div_categories">Open World games</h3>
+                        <sub class="p_div_categories">Grand theft auto V</sub>
+                        <sub class="sub_div_categories">The Legend of Zelda: Breath of the Wild</sub>
+                        <sub class="p_div_categories">Minecraft</sub>
+                        <sub class="sub_div_categories">Day's Gone</sub>
+                        
+                    </div>
+                </article>
+                <button class="button_categorie">Meer Categorieën ontdekken</button>
+            </div>
+        </article>
+
+        <!-- Most talked about -->
+
+        <article class="instructie__article">
+            <section class="section_instractor">
+                <div class="div_instractor_image">
+                    <img src="/img/mc.webp" alt="" class="div_instractor_image">
+                </div>
+                <div class="div_intractor_text">
+                    <h1 class="h1_intractor">Meest besproken game Nu!</h1>
+                    <p class="p_instractor">De meest besproken game is momenteel De hit Minecraft (2011) bekijk hier wat er nu gaande is in minecraft!</p>
+                        <button class="button_instractor">Minecraft</button>
+                </div>
+            </section>
+        </article>
+
+        <!-- Trusted by over 12.500 great teams -->
+        <section class="section_trusted_by_team">
+            <article class="article_trusted_by_team">
+                <h1 class="h1_trusted_by_team">Onze grootste sponsors</h1>
+                <p class="p_trusted_by_team">Dit zijn onze grootste sponsors!</p>
+                <div class="div_trusted_by_team">
+                    <img src="./img/nasdaq-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/volkswagen-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/box-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/netapp-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/eventbrite-dark.svg" alt="" class="img_trusted_by_team">
+                    <img src="./img/tcs-dark.svg" alt="" class="img_trusted_by_team">
+                </div>
+            </article>
+        </section>
+
+        <!-- udemy bussiness -->
+        <section class="section_udemy_bussiness">
+            <article class="article_udemy_bussiness">
+                <div class="div_text_udemy_bussiness">
+                   <div>
+                    <img class="img_text_udemy_bussiness" src="./img/udemy.bus.webp" alt="">
+                   </div>
+                    <p class="ptext_udemy_bussiness">
+                       Join de Udemy+ community for veel kortingen,acties, giveaway's en meer!
+                    </p>
+                    <button class="buttonimg_text_udemy_bussiness">Neem Udemy+</button>
+                </div>
+                <div class="div_img_udemy_bussiness">
+                    <img class="imagediv_img_udemy_bussiness"  src="./img/game-compy.webp" alt="">
+                </div>
+            </article>
+
+            <!-- Breng verandering in je leven door middel van educatie -->
+
+        </section>
+
+        <section class="breng_verandering">
+            <article class="article_breng_verandering">
+                <div class="div_breng_verandering_image">
+                    <img src="./img/discordo.webp" alt="" class="img_breng_veranderingen">
+                </div>
+
+                <div class="div_breng_veranderingen_text">
+                    <h1 class="h1_div_breng_veranderingen_text">Breng de community samen</h1>
+                    <p class="p_div_breng_veranderingen_text">Gaming is echt leuk,maar nog leuker in onze discord waarin we 
+                        meer te doen hebben,winacties doen en nog meer! </p>
+                    <button class="button_breng_veranderingen">Join de Discord</button>
+                </div>
+            </article>
+        </section>
+
+
+        <footer class="footer">
+            <section class="section_footer">
+                <article class="article_footer">
+                    <div class="ul_footer">
+                        <li class="li_footer">Udemy+</li>
+                        <li class="li_footer">Discord community</li>
+                        <li class="li_footer">De app Downloaden</li>
+                        <li class="li_footer">Info over ons</li>
+                        <li class="li_footer">Contact opnemen</li>
+                    </div>
+                    <div class="ul_footer">
+                        <li class="li_footer">Vacatures</li>
+                        <li class="li_footer">Blog</li>
+                        <li class="li_footer">Hulp en ondersteuning</li>
+                        <li class="li_footer">Partner</li>
+                        <li class="li_footer">Investeerders</li>
+                    </div>
+                    <div class="ul_footer">
+                        <li class="li_footer">Voorwaarden</li>
+                        <li class="li_footer">Privacybeleid</li>
+                        <li class="li_footer">Cookie-instellingen</li>
+                        <li class="li_footer">Sitemap</li>
+                        <li class="li_footer">Toegankelijkheidsverklaring</li>
+                    </div>
+                </article>
+                
+
+                <div class="ul_bol_footer">
+                    <img src="./img/icons8-geography-52.webp" alt="" class="img_bol_footer">
+                    <p>Nederland</p>
+                </div>
+
+                
+            </section>
+
+                <article class="article_icon_author">
+                    <div class="div_icon_author">
+                    <img src="./img/rstar.webp" alt="" class="img_icon_author">
+                    </div>
+                    <div class="div_author_text">
+                        <p>© 2022 Udemy, Inc.</p>
+                    </div>
+                </article>
+
+
+           
+        </footer>
+        <!--  -->
+    </main>
+</body>
+</html>

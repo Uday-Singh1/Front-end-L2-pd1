@@ -1,0 +1,13 @@
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@mixin fontSanserif {
+    font-weight: 400;
+    font-family: variables.$oswald;
+}
+

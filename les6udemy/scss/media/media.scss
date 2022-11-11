@@ -1,0 +1,226 @@
+@media screen and (max-width: 80rem) {
+    body{
+        overflow-x: hidden;
+        .ul_header{
+            .li_hide{
+                display: none;
+                
+        }
+
+        .side_bars_icon{
+            display: flex;
+        }
+
+        }
+
+        .section_main_udemy_cardje{
+            display: flex;
+            position: relative;
+            left: 16rem;
+            bottom: 24rem;
+
+            .div_main_udemy_cardje{
+                width: 38rem;
+            }
+        }
+
+        .article_udemy_articles{
+            position: relative;
+            left: 10rem;
+            bottom: 14rem;
+            font-size: 1.5rem;
+
+            .section_article_udemy{
+                .p_article_udemy{
+                    width: 45ch;
+                }
+
+            }
+            
+            
+        }
+                //(dit was om de knoppen te fixen)//
+        // .div_carousel:nth-child(2),  .div_carousel:nth-child(4), 
+        // .div_carousel:nth-child(3), .div_carousel:nth-child(5){
+        //     display: none;
+
+        // }
+
+        .div_categorien_courses{
+
+            .article_categorie{
+                .div_categories:nth-child(2),.div_categories:nth-child(3){
+                    display: none;
+                }
+            }
+            
+
+        }
+
+        .instructie__article{
+           
+            .div_intractor_text{
+                position: relative;
+                right: 10rem;
+                
+                
+            }
+
+            .div_instractor_image{
+                max-width: 30rem;
+                height: 30rem;
+
+                .intructie_foto{
+                    max-width: 100%;
+                   
+                }
+            }
+
+        }
+
+        
+        .section_udemy_bussiness{
+            
+            .article_udemy_bussiness{
+                display: flex;
+                    flex-direction: column-reverse;
+
+                .div_text_udemy_bussiness{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            }
+        }
+
+        .article_breng_verandering{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+    
+}
+    
+}
+
+// 
+
+@media screen and (max-width: 50rem) {
+    body{
+        .section_main_udemy_cardje{
+            display: flex;
+            position: relative;
+            left: 4rem;
+            bottom: 24rem;
+
+            .div_main_udemy_cardje{
+                width: 38rem;
+            }
+        }
+
+        .article_udemy_articles{
+            position: relative;
+            left: 2rem;
+            bottom: 14rem;
+            font-size: 1.5rem;
+
+            .section_article_udemy{
+                .p_article_udemy{
+                    width: 45ch;
+                }
+
+            }
+            
+            
+        }
+        
+
+        .div_categorien_courses{
+
+            .article_categorie{
+                .div_categories:nth-child(2),.div_categories:nth-child(3),.div_categories:nth-child(4){
+                    display: none;
+                }
+            }
+            
+
+        }
+        .section_instractor{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        
+        
+    }
+    
+}
+
+@media screen and (max-width: 35rem) {
+    body{
+
+        // het main foto kaartje boven de text
+        // dit klasse is voor de text dat op de foto komt.
+        .section_main_udemy_cardje{
+            display: flex;
+            position: relative;
+            left: 3rem;
+            bottom: 24rem;
+            
+
+            .div_main_udemy_cardje{
+                width: 34rem;
+
+                .h2_cardje{
+                    width: 17ch;
+                }
+
+                .p_cardje{
+                    width: 25ch;
+                }
+            }
+        }
+
+        .article_udemy_articles{
+            position: relative;
+            left: 2rem;
+            bottom: 14rem;
+            font-size: 1.5rem;
+
+            .section_article_udemy{
+                .p_article_udemy{
+                    width: 34ch;
+                }
+
+            }
+            
+            
+        }
+
+        .div_breng_verandering_image{
+            display: flex;
+            justify-content: center;
+        }
+
+        .article_cardjes_courses_udem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .article_footer{
+            display: flex;
+            gap: 4rem;
+        }
+
+        .article_breng_verandering{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+    
+    

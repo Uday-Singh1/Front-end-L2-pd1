@@ -1,0 +1,14 @@
+@use '/scss/components/mixins.scss';
+@use '/scss/abstracts/variables.scss';
+body{
+    min-height: 100vh;
+    @include mixins.flex;
+    font-size: 1.5rem;
+    background: variables.$gradient;
+    padding: 3rem;
+}
+
+h2{
+    font-size: 200%;
+}
+

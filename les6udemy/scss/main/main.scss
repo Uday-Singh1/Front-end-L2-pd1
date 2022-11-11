@@ -1,0 +1,572 @@
+@use '../abstracts/variables.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .section_main_udemy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .section_main_udemy_foto {
+            width: 85%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+    }
+
+    .section_main_udemy_cardje {
+        display: flex;
+        position: relative;
+        bottom: 32rem;
+        left: 20rem;
+
+        .h2_cardje {
+            width: 25ch;
+            font-weight: bolder;
+            font-size: 3rem;
+
+        }
+
+        .p_cardje {
+            width: 38ch;
+
+        }
+
+        .div_main_udemy_cardje {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 2rem;
+            width: 42.5rem;
+            height: 20rem;
+            box-shadow: variables.$box-shadow;
+            background: variables.$whitey;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .article_udemy_articles {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 12rem;
+        width: 85%;
+
+        gap: 2rem;
+
+        .section_article_udemy {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .h1_article_udemy {
+                font-size: 4rem;
+            }
+
+            .p_article_udemy {
+                font-size: 2rem;
+                width: 70ch;
+
+            }
+        }
+
+        //    carousel
+        .section_carousel_udemy {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+
+            .article_carousel_udemy {
+                display: flex;
+                gap: 2rem;
+
+                .div_carousel {
+                    color: rgba(0, 0, 0, 0.9);
+                    list-style: none;
+
+                    &:hover {
+                        color: rgba(0, 0, 0, 1);
+                        cursor: pointer;
+                    }
+
+                }
+            }
+
+            .div_text_carousel {
+                min-width: 70%;
+                padding: 3rem;
+                min-height: 30rem;
+                gap: 2rem;
+
+                border: 0.1rem solid rgba(0, 0, 0, 0.5);
+
+
+                .img_carousel {
+                    min-width: 100%;
+                    max-height: 40rem;
+                    object-fit: cover;
+                }
+
+
+                .p_carousel {
+                    width: 100%;
+                }
+            }
+
+            .carousl {
+                display: flex;
+                flex-direction: column;
+
+                .button_carousel_text {
+                    min-width: 12rem;
+                    max-width: 20rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    height: 4rem;
+                    border: 0.1rem solid;
+                    background: white;
+                    font-weight: 600;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.9);
+                        color: white;
+                    }
+                }
+            }
+
+            // einde carousel
+        }
+
+        // product cards
+
+        .section_cardjes_courses_udemy {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 8rem;
+            min-height: 60rem;
+            gap: 2rem;
+
+            &__h1 {
+                font-weight: 900;
+                font-size: 3rem;
+            }
+
+
+            .article_cardjes_courses_udemy_udem {
+                display: flex;
+                gap: 1.3rem;
+                flex-wrap: wrap;
+
+                .div_cardjes_courses {
+                    width: 25rem;
+                    height: 35rem;
+                    box-shadow: 0.5rem 0.5rem 2rem 0.111rem rgba(0, 0, 0, 0.3);
+                    border-radius: 0.5rem;
+                    background: rgba(255, 255, 255, 0.5);
+                    position: relative;
+                    cursor: pointer;
+
+                    .article_text_courses_cardjes {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        padding: 1rem 0.5rem;
+
+                        .div_reviews-star_courses {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+
+                            .p_review_numbers {
+                                color: rgb(155, 106, 14);
+                            }
+
+                            .li_revieuw {
+                                list-style: none;
+                                display: flex;
+                                align-items: center;
+                                gap: 0.3rem;
+
+
+                                .fa-star {
+                                    font-size: 1.5rem;
+                                    color: orange;
+                                }
+
+                            }
+                        }
+
+                        .div_prijs_courses-now {
+                            display: flex;
+                            gap: 2rem;
+
+                            .courses_prijs-now {
+                                font-weight: 700;
+                                font-size: 1.8rem;
+                            }
+
+                            .courses_prijs-previes {
+                                color: rgba(0, 0, 0, 0.5);
+                                text-decoration: line-through;
+                                font-size: 1.8rem;
+                            }
+                        }
+
+                    }
+
+                    .div_cardjes_courses:hover .overlay {
+                        opacity: 1;
+                    }
+
+
+
+
+                    .udemy_courses_cardjes_images {
+                        width: 100%;
+                        height: 40%;
+                        object-fit: cover;
+                        border-top-left-radius: 0.5rem;
+                        border-top-right-radius: 0.5rem;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .articles_categorien_courses {
+        background: #f7f9fa;
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .div_categorien_courses {
+            display: flex;
+            gap: 4rem;
+            flex-direction: column;
+            width: 80%;
+            height: 40rem;
+            padding: 2rem 0;
+            justify-content: center;
+            align-items: center;
+
+            .article_categorie {
+                display: flex;
+                gap: 4rem;
+                justify-content: center;
+                align-items: center;
+
+
+                width: 100%;
+
+
+                .div_categories {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 3rem;
+
+                    .sub_div_categories {
+
+                        &:hover {
+                            color: variables.$highlight;
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .p_div_categories {
+
+                        &:hover {
+                            color: variables.$highlight;
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+
+
+
+                    .h1_div_categories {
+
+                        &:hover {
+                            color: variables.$highlight;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button_categorie {
+            width: 22rem;
+            min-height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid variables.$highlight;
+            background: variables.$whitey;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover {
+                background: variables.$highlight;
+
+            }
+        }
+    }
+}
+
+.instructie__article {
+    width: 100%;
+    min-height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+
+
+    .section_instractor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        .div_instractor_image{
+
+            .mc {
+                min-width: 40rem;
+                max-height: 30rem;
+                object-fit: contain;
+                margin-left: -5rem;
+            }
+
+            .intructie_foto {
+                width: 100%;
+                height: 5rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+
+        }
+
+
+
+
+        .div_intractor_text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .h1_intractor {
+                font-weight: 600;
+                font-size: 3rem;
+            }
+
+            .p_instractor {
+                width: 30ch;
+                word-wrap: break-word;
+            }
+
+            .button_instractor {
+                width: 25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 5rem;
+                background: rgba(0, 0, 0, 0.9);
+                color: white;
+                cursor: pointer;
+                font-weight: 600;
+
+                &:hover {
+                    background: variables.$highlight;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.section_trusted_by_team {
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .article_trusted_by_team {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+        padding: 2rem;
+        background: #b8ddef;
+        min-height: 25rem;
+
+        .h1_trusted_by_team {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .div_trusted_by_team {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 12rem;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.section_udemy_bussiness {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50rem;
+
+    .article_udemy_bussiness {
+        display: flex;
+        padding: 2rem 40rem;
+        align-items: center;
+        justify-content: center;
+        min-height: 40rem;
+        gap: 2rem;
+
+
+        .div_text_udemy_bussiness {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 100%;
+            min-height: 40rem;
+
+            .ptext_udemy_bussiness {
+                width: 30ch;
+            }
+
+
+
+
+            .buttonimg_text_udemy_bussiness {
+                width: 20rem;
+                height: 4rem;
+                background: rgba(0, 0, 0, 0.9);
+                color: white;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 1);
+                }
+            }
+
+            .img_text_udemy_bussiness {
+                max-width: 100%;
+                height: 40%;
+                object-fit: contain;
+            }
+
+        }
+
+        .div_img_udemy_bussiness {
+            display: flex;
+
+
+
+            .imagediv_img_udemy_bussiness {
+                width: 100%;
+                min-height: 40rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+
+// breng verandering
+
+.breng_verandering {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 50rem;
+
+    .article_breng_verandering {
+        display: flex;
+        justify-content: center;
+
+
+        .div_breng_verandering_image {
+            display: flex;
+            height: 40rem;
+
+            .img_breng_veranderingen {
+                max-width: 80%;
+                max-height: 31rem;
+                object-fit: cover;
+            }
+        }
+
+        .div_breng_veranderingen_text {
+            display: flex;
+            justify-content: flex-start;
+            padding: 3rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 40ch;
+
+            .h1_div_breng_veranderingen_text {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            .p_div_breng_veranderingen_text {
+                width: 34ch;
+            }
+
+            .button_breng_veranderingen {
+                width: 20rem;
+                height: 4rem;
+                background: rgba(0, 0, 0, 0.9);
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+
+    }
+
+}
